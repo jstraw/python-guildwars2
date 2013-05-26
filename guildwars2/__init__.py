@@ -1,6 +1,7 @@
 import os
 import requests
 
+from consts import version
 import wvw.objectives
 import wvw.matches
 import events
@@ -9,8 +10,6 @@ import maps
 #import items
 #import recipes
 
-
-version = '0.0.0'
 
 class GuildWars2:
     base_url = 'https://api.guildwars2.com/v1/'

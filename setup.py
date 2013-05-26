@@ -1,5 +1,5 @@
 from setuptools import setup
-from guildwars2 import version
+from guildwars2.consts import version
 
 
 install_requires = [
