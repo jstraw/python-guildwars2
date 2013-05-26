@@ -1,6 +1,10 @@
 from setuptools import setup
-from guildwars2.consts import version
 
+version = None
+with open('guildwars2/consts.py', 'r') as f:
+    for x in f.readlines():
+        if 'version' in x:
+            version = line.split('=')[1].replace('"', '').replace("'", '').strip()
 
 install_requires = [
     'requests'
