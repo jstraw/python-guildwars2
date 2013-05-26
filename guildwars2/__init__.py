@@ -24,6 +24,8 @@ class GuildWars2:
             self.user_agent = user_agent
         self.maps = maps.maps(self)
         self.worlds = worlds.worlds(self)
+        self.wvw = wvw.matches.match_list(self)
+        self.wvw.objectives = wvw.objectives.objective_list(self)
 
 
     
