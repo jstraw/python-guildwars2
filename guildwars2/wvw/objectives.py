@@ -14,6 +14,10 @@ class Objective:
         except:
             self.score = scores['camp']
 
+    def __repr__(self):
+        return "<Objective: %s (%d) (%d points)" % \
+                (self.name, self.id, self.score)
+
 
 class objective_list(collections.MutableSequence):
     uri = 'wvw/objective_names'
